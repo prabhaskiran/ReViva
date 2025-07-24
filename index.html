@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ReViva Login</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="background"></div>
+  <div class="container">
+    <div class="form-box">
+      <img src="reviva.png" alt="ReViva Logo" class="logo" />
+      <div class="title">
+        <span class="red">Re</span><span class="blue">Viva</span>
+      </div>
+      <input type="text" placeholder="Email" id="email" />
+      <input type="password" placeholder="Password" id="password" />
+      <button class="login-btn" onclick="handleLogin()">Log in</button>
+      <div class="signup-text">
+        Don’t have an account? <a href="signup.html">Sign up</a>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="footer-links">
+      <select name="language" id="language-select">
+        <option value="en">English</option>
+        <option value="hi">Hindi</option>
+        <option value="ta">Tamil</option>
+      </select>
+      <a href="#">User Agreement</a> | <a href="#">Privacy Policy</a>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

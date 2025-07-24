@@ -1,0 +1,131 @@
+/* CSS FILE (styles.css) */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+body, html {
+  height: 100%;
+  overflow: hidden;
+}
+.background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(-45deg, #fff6e5, #ffe6f2, #e6faff, #fff0f7);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  z-index: -1;
+}
+@keyframes gradientBG {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 50px);
+}
+.form-box {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 40px 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.logo {
+  width: 120px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+.logo:hover {
+  transform: scale(1.05);
+}
+.title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-shadow: 0 0 1px black;
+}
+.title .red {
+  color: #E80000;
+}
+.title .blue {
+  color: #0077DB;
+}
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 2px solid #0077DB;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+input:focus {
+  border-color: #E80000;
+  outline: none;
+  background-color: #f0f8ff;
+}
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  border-radius: 8px;
+  background-color: #E80000;
+  color: white;
+  border: none;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+.login-btn:hover {
+  background-color: #c40000;
+}
+.signup-text {
+  margin-top: 15px;
+  font-size: 15px;
+}
+.signup-text a {
+  color: #0077DB;
+  text-decoration: none;
+  font-weight: bold;
+}
+.signup-text a:hover {
+  text-decoration: underline;
+}
+.footer {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+}
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+}
+.footer select {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.footer a {
+  color: #0077DB;
+  text-decoration: none;
+}
+.footer a:hover {
+  text-decoration: underline;
+}

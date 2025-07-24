@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ReViva Sign Up</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="background"></div>
+  <div class="container">
+    <div class="form-box">
+      <img src="reviva-logo.png" alt="ReViva Logo" class="logo" />
+      <div class="title">
+        <span class="red">Re</span><span class="blue">Viva</span>
+      </div>
+      <div class="switch-tabs">
+        <button class="tab selected">Individual</button>
+        <button class="tab" disabled>Organization</button>
+      </div>
+      <input type="text" placeholder="Full Name" id="fullname" />
+      <input type="email" placeholder="Email" id="signup-email" />
+      <input type="text" placeholder="Mobile Number" id="signup-phone" />
+      <div class="input-row">
+        <input type="date" id="dob" />
+        <input type="text" placeholder="Blood Grp" id="bloodgroup" />
+      </div>
+      <div class="checkboxes">
+        <label><input type="checkbox" id="donate" /> Donate</label>
+        <label><input type="checkbox" id="receive" /> Receive</label>
+      </div>
+      <button class="login-btn" onclick="handleSignup()">Complete Registration</button>
+      <div class="signup-text">
+        ← <a href="index.html">Back to Login</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
